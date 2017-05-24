@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+input {
+    z-index: 10;
+    border-radius: 30px;
+    border: none;
+    background: #ebebeb;
+}
+
+#searchBar {
+    padding-left: 10px;
+}
+
+#theBody {
+    font-family: 'Arvo', serif;
+    background-color: #87c8c7;
+    font-size: 40px;
+}
+
+.glyphicon-remove {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: inherit;
+    right: 50px;
+}
+
+.glyphicon-search {
+    color: black;
+    font-size: 60px;
+}

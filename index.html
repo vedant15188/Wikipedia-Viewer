@@ -3,15 +3,31 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <meta charset="UTF-8">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Wikipedia Viewer</title>
 </head>
-<body>
-Hello there!
+<body id="theBody">
+<div class="container">
+    <br><br><br><br><br><br>
+    <div id="text1" class="row text-center"><a style="color: #000; text-decoration: none" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a></div><br>
+    <div class="row text-center">
+        <a><i id="SearchIcon" class="glyphicon glyphicon-search" aria-hidden="true"></i></a><!--
+        --><div class="text-center"><!--
+        --><form><!--
+        --><input id="searchBar" name="SearchQuery" placeholder="Search!" type="text" style="display: none" value=""><!--
+        --><a style="text-decoration: none"><div id="inputGroup" style="display: none"><span style="display: none" class="glyphicon glyphicon-remove cross"></span></div></a><!--
+        --><input type="button" class="btn-default" value="Submit!" onclick="getRandomArticle()" id="submitButton" style="display: none"></form>
+        </div>
+    </div><br>
+    <div class="row text-center" style="color: black ">Click on the search icon to perform a search!</div>
+</div>
 <script>
+    $(document).ready(function () {
+        $("#SearchIcon").on('click',showSearchBar);
+        $(".glyphicon-remove").on('click',hideSearchBar);
+    });
 </script>
 </body>
 </html>
