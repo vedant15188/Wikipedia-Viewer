@@ -7,6 +7,20 @@ input {
     background: #ebebeb;
 }
 
+#searchResults {
+    display: block;
+    width: 100%;
+}
+
+li {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 30px 5px 30px;
+    background-color: #beffe1;
+    -webkit-border-radius: 25px;
+    font-size: 20px;
+}
+
 #searchBar {
     padding-left: 10px;
 }
